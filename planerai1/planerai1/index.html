@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Planerai</title>
+  </head>
+  <body>
+    <div class="plan">
+      <div class="plan-header">
+        <div class="logo">
+          <img src="./assets/planeraiLogo.svg" />
+        </div>
+        <nav class="main-nav">
+          <a href="#">How It Works</a>
+          <a href="#">Services</a>
+          <a href="#">Whitepaper</a>
+          <a href="#">About</a>
+        </nav>
+        <div class="open-app">
+          <button type="button" class="open-app_button">
+            <img src="./assets/login.svg" class="login-img" />
+            Open App
+          </button>
+        </div>
+
+        <!-- MOBILE NAV -->
+        <div class="plan-header_mob">
+          <div class="logo-mob">
+            <img src="./assets/planeraiLogo.svg" />
+          </div>
+          <div class="drop">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div id="myLinks" class="links">
+            <nav class="links-nav">
+              <a href="#">How It Works</a>
+              <a href="#">Services</a>
+              <a href="#">Whitepaper</a>
+              <a href="#">About</a>
+            </nav>
+            <div class="links-social">
+              <img src="./assets/facebook.svg" alt="facebook" />
+              <img src="./assets/linkedin.svg" alt="LinkedIn" />
+              <img src="./assets/insta.svg" alt="Instagram" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-social">
+        <img src="./assets/facebook.svg" alt="facebook" />
+        <img src="./assets/linkedin.svg" alt="LinkedIn" />
+        <img src="./assets/insta.svg" alt="Instagram" />
+      </div>
+      <div class="plan-scroll">
+        <img src="./assets/mouse.svg" alt="Scroll" />
+        <p>Scroll Down To Explore</p>
+      </div>
+
+      <!-- Mobile scroll -->
+      <div class="plan-scrollmob">
+        <p>Swipe Up To Explore</p>
+      </div>
+
+      <div class="plan-content">
+        <div class="plan-content_red">
+          <div class="line"></div>
+          <h3>Enabling smarter decisions</h3>
+        </div>
+        <div class="plan-content_title">
+          <h1>It's all about<br />you now.</h1>
+        </div>
+        <div class="plan-content_info">
+          <div class="button">
+            <button type="button" class="button-btn"><span>Prev</span></button>
+            <button type="button" class="button-btn"><span>Next</span></button>
+          </div>
+          <h3>
+            <strong>The world's first free business planning platform.</strong
+            ><br />In perfect understanding with entrepreneuers like you.<br />Plan
+            and track your progress.Anytime.Anywhere
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
